@@ -1,0 +1,2 @@
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  could not open /home/mda/study/hse/myfuzz/cov_metrics/random (did you misspell it? If VCS, did you forget +permissive/+permissive-off?)

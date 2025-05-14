@@ -1,0 +1,340 @@
+core   0: 0x0000000000001000 (0x00000297) auipc   t0, 0x0
+core   0: 0x0000000000001004 (0x02028593) addi    a1, t0, 32
+core   0: 0x0000000000001008 (0xf1402573) csrr    a0, mhartid
+core   0: 0x000000000000100c (0x0182b283) ld      t0, 24(t0)
+core   0: 0x0000000000001010 (0x00028067) jr      t0
+core   0: >>>>  $xrv64i2p1_m2p0_a2p1_f2p2_d2p2_zicsr2p0_zifencei2p0_zmmul1p0_zaamo1p0_zalrsc1p0
+core   0: 0x0000000080000000 (0x00010f97) auipc   t6, 0x10
+core   0: 0x0000000080000004 (0x000f8f93) mv      t6, t6
+core   0: 0x0000000080000008 (0x000fb083) ld      ra, 0(t6)
+core   0: 0x000000008000000c (0x008fb103) ld      sp, 8(t6)
+core   0: 0x0000000080000010 (0x010fb183) ld      gp, 16(t6)
+core   0: 0x0000000080000014 (0x018fb203) ld      tp, 24(t6)
+core   0: 0x0000000080000018 (0x020fb283) ld      t0, 32(t6)
+core   0: 0x000000008000001c (0x028fb303) ld      t1, 40(t6)
+core   0: 0x0000000080000020 (0x030fb383) ld      t2, 48(t6)
+core   0: 0x0000000080000024 (0x038fb403) ld      s0, 56(t6)
+core   0: 0x0000000080000028 (0x040fb483) ld      s1, 64(t6)
+core   0: 0x000000008000002c (0x048fb503) ld      a0, 72(t6)
+core   0: 0x0000000080000030 (0x050fb583) ld      a1, 80(t6)
+core   0: 0x0000000080000034 (0x058fb603) ld      a2, 88(t6)
+core   0: 0x0000000080000038 (0x060fb683) ld      a3, 96(t6)
+core   0: 0x000000008000003c (0x068fb703) ld      a4, 104(t6)
+core   0: 0x0000000080000040 (0x070fb783) ld      a5, 112(t6)
+core   0: 0x0000000080000044 (0x078fb803) ld      a6, 120(t6)
+core   0: 0x0000000080000048 (0x080fb883) ld      a7, 128(t6)
+core   0: 0x000000008000004c (0x088fb903) ld      s2, 136(t6)
+core   0: 0x0000000080000050 (0x090fb983) ld      s3, 144(t6)
+core   0: 0x0000000080000054 (0x098fba03) ld      s4, 152(t6)
+core   0: 0x0000000080000058 (0x0a0fba83) ld      s5, 160(t6)
+core   0: 0x000000008000005c (0x0a8fbb03) ld      s6, 168(t6)
+core   0: 0x0000000080000060 (0x0b0fbb83) ld      s7, 176(t6)
+core   0: 0x0000000080000064 (0x0b8fbc03) ld      s8, 184(t6)
+core   0: 0x0000000080000068 (0x0c0fbc83) ld      s9, 192(t6)
+core   0: 0x000000008000006c (0x0c8fbd03) ld      s10, 200(t6)
+core   0: 0x0000000080000070 (0x0d0fbd83) ld      s11, 208(t6)
+core   0: 0x0000000080000074 (0x0d8fbe03) ld      t3, 216(t6)
+core   0: 0x0000000080000078 (0x0e0fbe83) ld      t4, 224(t6)
+core   0: 0x000000008000007c (0x0e8fbf03) ld      t5, 232(t6)
+core   0: 0x0000000080000080 (0x0f0fbf83) ld      t6, 240(t6)
+core   0: 0x0000000080000084 (0x3000006f) j       pc + 0x300
+core   0: >>>>  reset_vector
+core   0: 0x0000000080000384 (0x30005073) csrwi   mstatus, 0
+core   0: 0x0000000080000388 (0xf1402573) csrr    a0, mhartid
+core   0: 0x000000008000038c (0x00051063) bnez    a0, pc + 0
+core   0: 0x0000000080000390 (0x00000297) auipc   t0, 0x0
+core   0: 0x0000000080000394 (0x01828293) addi    t0, t0, 24
+core   0: 0x0000000080000398 (0x30529073) csrw    mtvec, t0
+core   0: 0x000000008000039c (0x30205073) csrwi   medeleg, 0
+core   0: 0x00000000800003a0 (0x30305073) csrwi   mideleg, 0
+core   0: 0x00000000800003a4 (0x30405073) csrwi   mie, 0
+core   0: 0x00000000800003a8 (0x00000297) auipc   t0, 0x0
+core   0: 0x00000000800003ac (0x01028293) addi    t0, t0, 16
+core   0: 0x00000000800003b0 (0x30529073) csrw    mtvec, t0
+core   0: 0x00000000800003b4 (0x18005073) csrwi   satp, 0
+core   0: 0x00000000800003b8 (0x00000297) auipc   t0, 0x0
+core   0: 0x00000000800003bc (0x02428293) addi    t0, t0, 36
+core   0: 0x00000000800003c0 (0x30529073) csrw    mtvec, t0
+core   0: 0x00000000800003c4 (0x0010029b) addiw   t0, zero, 1
+core   0: 0x00000000800003c8 (0x03529293) slli    t0, t0, 53
+core   0: 0x00000000800003cc (0xfff28293) addi    t0, t0, -1
+core   0: 0x00000000800003d0 (0x3b029073) csrw    pmpaddr0, t0
+core   0: 0x00000000800003d4 (0x01f00293) li      t0, 31
+core   0: 0x00000000800003d8 (0x3a029073) csrw    pmpcfg0, t0
+core   0: 0x00000000800003dc (0x00000297) auipc   t0, 0x0
+core   0: 0x00000000800003e0 (0xd6428293) addi    t0, t0, -668
+core   0: 0x00000000800003e4 (0x30529073) csrw    mtvec, t0
+core   0: 0x00000000800003e8 (0x00000193) li      gp, 0
+core   0: 0x00000000800003ec (0x00100513) li      a0, 1
+core   0: 0x00000000800003f0 (0x01f51513) slli    a0, a0, 31
+core   0: 0x00000000800003f4 (0x00055c63) bgez    a0, pc + 24
+core   0: 0x000000008000040c (0x00000297) auipc   t0, 0x0
+core   0: 0x0000000080000410 (0xd0828293) addi    t0, t0, -760
+core   0: 0x0000000080000414 (0x10529073) csrw    stvec, t0
+core   0: 0x0000000080000418 (0x0000b2b7) lui     t0, 0xb
+core   0: 0x000000008000041c (0x1092829b) addiw   t0, t0, 265
+core   0: 0x0000000080000420 (0x3022a073) csrs    medeleg, t0
+core   0: 0x0000000080000424 (0x00007537) lui     a0, 0x7
+core   0: 0x0000000080000428 (0x8005051b) addiw   a0, a0, -2048
+core   0: 0x000000008000042c (0x30052073) csrs    mstatus, a0
+core   0: 0x0000000080000430 (0x00305073) csrwi   fcsr, 0
+core   0: 0x0000000080000434 (0xc55ff0ef) jal     pc - 0x3ac
+core   0: >>>>  init_freg
+core   0: 0x0000000080000088 (0x00020f97) auipc   t6, 0x20
+core   0: 0x000000008000008c (0xf78f8f93) addi    t6, t6, -136
+core   0: 0x0000000080000090 (0x000fa007) flw     ft0, 0(t6)
+core   0: 0x0000000080000094 (0x008fa087) flw     ft1, 8(t6)
+core   0: 0x0000000080000098 (0x010fa107) flw     ft2, 16(t6)
+core   0: 0x000000008000009c (0x018fb187) fld     ft3, 24(t6)
+core   0: 0x00000000800000a0 (0x020fb207) fld     ft4, 32(t6)
+core   0: 0x00000000800000a4 (0x028fb287) fld     ft5, 40(t6)
+core   0: 0x00000000800000a8 (0x030fb307) fld     ft6, 48(t6)
+core   0: 0x00000000800000ac (0x038fa387) flw     ft7, 56(t6)
+core   0: 0x00000000800000b0 (0x040fb407) fld     fs0, 64(t6)
+core   0: 0x00000000800000b4 (0x048fb487) fld     fs1, 72(t6)
+core   0: 0x00000000800000b8 (0x050fa507) flw     fa0, 80(t6)
+core   0: 0x00000000800000bc (0x058fb587) fld     fa1, 88(t6)
+core   0: 0x00000000800000c0 (0x060fb607) fld     fa2, 96(t6)
+core   0: 0x00000000800000c4 (0x068fb687) fld     fa3, 104(t6)
+core   0: 0x00000000800000c8 (0x070fa707) flw     fa4, 112(t6)
+core   0: 0x00000000800000cc (0x078fb787) fld     fa5, 120(t6)
+core   0: 0x00000000800000d0 (0x080fb807) fld     fa6, 128(t6)
+core   0: 0x00000000800000d4 (0x088fa887) flw     fa7, 136(t6)
+core   0: 0x00000000800000d8 (0x090fa907) flw     fs2, 144(t6)
+core   0: 0x00000000800000dc (0x098fa987) flw     fs3, 152(t6)
+core   0: 0x00000000800000e0 (0x0a0fba07) fld     fs4, 160(t6)
+core   0: 0x00000000800000e4 (0x0a8faa87) flw     fs5, 168(t6)
+core   0: 0x00000000800000e8 (0x0b0fbb07) fld     fs6, 176(t6)
+core   0: 0x00000000800000ec (0x0b8fbb87) fld     fs7, 184(t6)
+core   0: 0x00000000800000f0 (0x0c0fbc07) fld     fs8, 192(t6)
+core   0: 0x00000000800000f4 (0x0c8fbc87) fld     fs9, 200(t6)
+core   0: 0x00000000800000f8 (0x0d0fbd07) fld     fs10, 208(t6)
+core   0: 0x00000000800000fc (0x0d8fbd87) fld     fs11, 216(t6)
+core   0: 0x0000000080000100 (0x0e0fbe07) fld     ft8, 224(t6)
+core   0: 0x0000000080000104 (0x0e8fae87) flw     ft9, 232(t6)
+core   0: 0x0000000080000108 (0x0f0faf07) flw     ft10, 240(t6)
+core   0: 0x000000008000010c (0x0f8faf87) flw     ft11, 248(t6)
+core   0: 0x0000000080000110 (0x00008067) ret
+core   0: 0x0000000080000438 (0xb0201073) csrw    minstret, zero
+core   0: 0x000000008000043c (0xf1402573) csrr    a0, mhartid
+core   0: >>>>  _fuzz_prefix
+core   0: 0x0000000080000440 (0x00b5c5b3) xor     a1, a1, a1
+core   0: 0x0000000080000444 (0x00300593) li      a1, 3
+core   0: 0x0000000080000448 (0x00059593) slli    a1, a1, 0
+core   0: 0x000000008000044c (0x00b585b3) add     a1, a1, a1
+core   0: 0x0000000080000450 (0x1445a773) csrrs   a4, sip, a1
+core   0: >>>>  _p1
+core   0: 0x0000000080000454 (0x18017773) csrrci  a4, satp, 2
+core   0: >>>>  _p2
+core   0: 0x0000000080000458 (0x3b7ce773) csrrsi  a4, pmpaddr7, 25
+core   0: >>>>  _end_prefix
+core   0: 0x000000008000045c (0x00000297) auipc   t0, 0x0
+core   0: 0x0000000080000460 (0x02428293) addi    t0, t0, 36
+core   0: 0x0000000080000464 (0x34129073) csrw    mepc, t0
+core   0: 0x0000000080000468 (0x00000293) li      t0, 0
+core   0: 0x000000008000046c (0x30200073) mret
+core   0: >>>>  _fuzz_main
+core   0: 0x0000000080000480 (0x00008013) mv      zero, ra
+core   0: >>>>  _l1
+core   0: 0x0000000080000484 (0xa0b5ab53) feq.s   s6, fa1, fa1
+core   0: >>>>  _l2
+core   0: 0x0000000080000488 (0x216aa8d3) fsgnjx.s fa7, fs5, fs6
+core   0: >>>>  _l3
+core   0: 0x000000008000048c (0x00008013) mv      zero, ra
+core   0: >>>>  _l4
+core   0: 0x0000000080000490 (0x28ac8ad3) fmin.s  fs5, fs9, fa0
+core   0: >>>>  _l5
+core   0: 0x0000000080000494 (0x281e92d3) fmax.s  ft5, ft9, ft1
+core   0: >>>>  _l6
+core   0: 0x0000000080000498 (0x00020d97) auipc   s11, 0x20
+core   0: 0x000000008000049c (0xb98d8d93) addi    s11, s11, -1128
+core   0: 0x00000000800004a0 (0x000d8d93) mv      s11, s11
+core   0: 0x00000000800004a4 (0xa1bdb72f) amomax.d a4, s11, (s11)
+core   0: >>>>  _l7
+core   0: 0x00000000800004a8 (0x00008013) mv      zero, ra
+core   0: >>>>  _l8
+core   0: 0x00000000800004ac (0x40c3dc3b) sraw    s8, t2, a2
+core   0: >>>>  _l9
+core   0: 0x00000000800004b0 (0x00020217) auipc   tp, 0x20
+core   0: 0x00000000800004b4 (0xb7020213) addi    tp, tp, -1168
+core   0: 0x00000000800004b8 (0x01422987) flw     fs3, 20(tp)
+core   0: >>>>  _l10
+core   0: 0x00000000800004bc (0x110400d3) fmul.s  ft1, fs0, fa6
+core   0: >>>>  _l11
+core   0: 0x00000000800004c0 (0xf0088253) fmv.w.x ft4, a7
+core   0: >>>>  _l12
+core   0: 0x00000000800004c4 (0x0123dd9b) srliw   s11, t2, 18
+core   0: >>>>  _l13
+core   0: 0x00000000800004c8 (0x0010c0b3) xor     ra, ra, ra
+core   0: 0x00000000800004cc (0x00100313) li      t1, 1
+core   0: 0x00000000800004d0 (0x01f31313) slli    t1, t1, 31
+core   0: 0x00000000800004d4 (0x006080b3) add     ra, ra, t1
+core   0: 0x00000000800004d8 (0x00100393) li      t2, 1
+core   0: 0x00000000800004dc (0x00239393) slli    t2, t2, 2
+core   0: 0x00000000800004e0 (0x007080b3) add     ra, ra, t2
+core   0: 0x00000000800004e4 (0x1800aa73) csrrs   s4, satp, ra
+core   0: >>>>  _l14
+core   0: 0x00000000800004e8 (0x00030397) auipc   t2, 0x30
+core   0: 0x00000000800004ec (0xcc838393) addi    t2, t2, -824
+core   0: 0x00000000800004f0 (0xff838393) addi    t2, t2, -8
+core   0: 0x00000000800004f4 (0xe153b12f) amomaxu.d sp, s5, (t2)
+core   0: >>>>  _l15
+core   0: 0x00000000800004f8 (0x00030317) auipc   t1, 0x30
+core   0: 0x00000000800004fc (0xc1830313) addi    t1, t1, -1000
+core   0: 0x0000000080000500 (0x00430313) addi    t1, t1, 4
+core   0: 0x0000000080000504 (0xffe00737) lui     a4, 0xffe00
+core   0: 0x0000000080000508 (0x00e34333) xor     t1, t1, a4
+core   0: 0x000000008000050c (0x20e32e2f) amoxor.w t3, a4, (t1)
+core   0: exception trap_store_access_fault, epc 0x000000008000050c
+core   0:           tval 0xffffffff7fe30114
+core   0: >>>>  csr_dump
+core   0: 0x0000000080000140 (0x00002097) auipc   ra, 0x2
+core   0: 0x0000000080000144 (0x0c008093) addi    ra, ra, 192
+core   0: 0x0000000080000148 (0x10002173) csrr    sp, sstatus
+core   0: 0x000000008000014c (0x0420bc23) sd      sp, 88(ra)
+core   0: 0x0000000080000150 (0x10402173) csrr    sp, sie
+core   0: 0x0000000080000154 (0x0620b823) sd      sp, 112(ra)
+core   0: 0x0000000080000158 (0x10502173) csrr    sp, stvec
+core   0: 0x000000008000015c (0x0620bc23) sd      sp, 120(ra)
+core   0: 0x0000000080000160 (0x10602173) csrr    sp, scounteren
+core   0: 0x0000000080000164 (0x0820b023) sd      sp, 128(ra)
+core   0: 0x0000000080000168 (0x14002173) csrr    sp, sscratch
+core   0: 0x000000008000016c (0x0820b423) sd      sp, 136(ra)
+core   0: 0x0000000080000170 (0x14102173) csrr    sp, sepc
+core   0: 0x0000000080000174 (0x0820b823) sd      sp, 144(ra)
+core   0: 0x0000000080000178 (0x14202173) csrr    sp, scause
+core   0: 0x000000008000017c (0x0820bc23) sd      sp, 152(ra)
+core   0: 0x0000000080000180 (0x14302173) csrr    sp, stval
+core   0: 0x0000000080000184 (0x0a20b023) sd      sp, 160(ra)
+core   0: 0x0000000080000188 (0x14402173) csrr    sp, sip
+core   0: 0x000000008000018c (0xf7f17113) andi    sp, sp, -129
+core   0: 0x0000000080000190 (0x0a20b423) sd      sp, 168(ra)
+core   0: 0x0000000080000194 (0x18002173) csrr    sp, satp
+core   0: 0x0000000080000198 (0x0a20b823) sd      sp, 176(ra)
+core   0: 0x000000008000019c (0xf1402173) csrr    sp, mhartid
+core   0: 0x00000000800001a0 (0x0a20bc23) sd      sp, 184(ra)
+core   0: 0x00000000800001a4 (0x30002173) csrr    sp, mstatus
+core   0: 0x00000000800001a8 (0x0c20b023) sd      sp, 192(ra)
+core   0: 0x00000000800001ac (0x30202173) csrr    sp, medeleg
+core   0: 0x00000000800001b0 (0x0c20b423) sd      sp, 200(ra)
+core   0: 0x00000000800001b4 (0x30302173) csrr    sp, mideleg
+core   0: 0x00000000800001b8 (0x0c20b823) sd      sp, 208(ra)
+core   0: 0x00000000800001bc (0x30402173) csrr    sp, mie
+core   0: 0x00000000800001c0 (0x0c20bc23) sd      sp, 216(ra)
+core   0: 0x00000000800001c4 (0x30502173) csrr    sp, mtvec
+core   0: 0x00000000800001c8 (0x0e20b023) sd      sp, 224(ra)
+core   0: 0x00000000800001cc (0x30602173) csrr    sp, mcounteren
+core   0: 0x00000000800001d0 (0x0e20b423) sd      sp, 232(ra)
+core   0: 0x00000000800001d4 (0x34002173) csrr    sp, mscratch
+core   0: 0x00000000800001d8 (0x0e20b823) sd      sp, 240(ra)
+core   0: 0x00000000800001dc (0x34102173) csrr    sp, mepc
+core   0: 0x00000000800001e0 (0x0e20bc23) sd      sp, 248(ra)
+core   0: 0x00000000800001e4 (0x34202173) csrr    sp, mcause
+core   0: 0x00000000800001e8 (0x1020b023) sd      sp, 256(ra)
+core   0: 0x00000000800001ec (0x34302173) csrr    sp, mtval
+core   0: 0x00000000800001f0 (0x1020b423) sd      sp, 264(ra)
+core   0: 0x00000000800001f4 (0x34402173) csrr    sp, mip
+core   0: 0x00000000800001f8 (0xf7f17113) andi    sp, sp, -129
+core   0: 0x00000000800001fc (0x1020b823) sd      sp, 272(ra)
+core   0: 0x0000000080000200 (0x3a002173) csrr    sp, pmpcfg0
+core   0: 0x0000000080000204 (0x1020bc23) sd      sp, 280(ra)
+core   0: 0x0000000080000208 (0x3b002173) csrr    sp, pmpaddr0
+core   0: 0x000000008000020c (0x1220bc23) sd      sp, 312(ra)
+core   0: 0x0000000080000210 (0x3b102173) csrr    sp, pmpaddr1
+core   0: 0x0000000080000214 (0x1420b023) sd      sp, 320(ra)
+core   0: 0x0000000080000218 (0x3b202173) csrr    sp, pmpaddr2
+core   0: 0x000000008000021c (0x1420b423) sd      sp, 328(ra)
+core   0: 0x0000000080000220 (0x3b302173) csrr    sp, pmpaddr3
+core   0: 0x0000000080000224 (0x1420b823) sd      sp, 336(ra)
+core   0: 0x0000000080000228 (0x3b402173) csrr    sp, pmpaddr4
+core   0: 0x000000008000022c (0x1420bc23) sd      sp, 344(ra)
+core   0: 0x0000000080000230 (0x3b502173) csrr    sp, pmpaddr5
+core   0: 0x0000000080000234 (0x1620b023) sd      sp, 352(ra)
+core   0: 0x0000000080000238 (0x3b602173) csrr    sp, pmpaddr6
+core   0: 0x000000008000023c (0x1620b423) sd      sp, 360(ra)
+core   0: 0x0000000080000240 (0x3b702173) csrr    sp, pmpaddr7
+core   0: 0x0000000080000244 (0x1620b823) sd      sp, 368(ra)
+core   0: 0x0000000080000248 (0x00006537) lui     a0, 0x6
+core   0: 0x000000008000024c (0x30052073) csrs    mstatus, a0
+core   0: >>>>  fcsrs_dump
+core   0: 0x0000000080000250 (0x00102173) csrr    sp, fflags
+core   0: 0x0000000080000254 (0x0420b023) sd      sp, 64(ra)
+core   0: 0x0000000080000258 (0x00202173) csrr    sp, frm
+core   0: 0x000000008000025c (0x0420b423) sd      sp, 72(ra)
+core   0: 0x0000000080000260 (0x00302173) csrr    sp, fcsr
+core   0: 0x0000000080000264 (0x0420b823) sd      sp, 80(ra)
+core   0: >>>>  reg_dump
+core   0: 0x0000000080000268 (0x00002097) auipc   ra, 0x2
+core   0: 0x000000008000026c (0xd9808093) addi    ra, ra, -616
+core   0: 0x0000000080000270 (0x0000b023) sd      zero, 0(ra)
+core   0: 0x0000000080000274 (0x0020b823) sd      sp, 16(ra)
+core   0: 0x0000000080000278 (0x0030bc23) sd      gp, 24(ra)
+core   0: 0x000000008000027c (0x0240b023) sd      tp, 32(ra)
+core   0: 0x0000000080000280 (0x0250b423) sd      t0, 40(ra)
+core   0: 0x0000000080000284 (0x0260b823) sd      t1, 48(ra)
+core   0: 0x0000000080000288 (0x0270bc23) sd      t2, 56(ra)
+core   0: 0x000000008000028c (0x0480b023) sd      s0, 64(ra)
+core   0: 0x0000000080000290 (0x0490b423) sd      s1, 72(ra)
+core   0: 0x0000000080000294 (0x04a0b823) sd      a0, 80(ra)
+core   0: 0x0000000080000298 (0x04b0bc23) sd      a1, 88(ra)
+core   0: 0x000000008000029c (0x06c0b023) sd      a2, 96(ra)
+core   0: 0x00000000800002a0 (0x06d0b423) sd      a3, 104(ra)
+core   0: 0x00000000800002a4 (0x06e0b823) sd      a4, 112(ra)
+core   0: 0x00000000800002a8 (0x06f0bc23) sd      a5, 120(ra)
+core   0: 0x00000000800002ac (0x0900b023) sd      a6, 128(ra)
+core   0: 0x00000000800002b0 (0x0910b423) sd      a7, 136(ra)
+core   0: 0x00000000800002b4 (0x0920b823) sd      s2, 144(ra)
+core   0: 0x00000000800002b8 (0x0930bc23) sd      s3, 152(ra)
+core   0: 0x00000000800002bc (0x0b40b023) sd      s4, 160(ra)
+core   0: 0x00000000800002c0 (0x0b50b423) sd      s5, 168(ra)
+core   0: 0x00000000800002c4 (0x0b60b823) sd      s6, 176(ra)
+core   0: 0x00000000800002c8 (0x0b70bc23) sd      s7, 184(ra)
+core   0: 0x00000000800002cc (0x0d80b023) sd      s8, 192(ra)
+core   0: 0x00000000800002d0 (0x0d90b423) sd      s9, 200(ra)
+core   0: 0x00000000800002d4 (0x0db0bc23) sd      s11, 216(ra)
+core   0: 0x00000000800002d8 (0x0fc0b023) sd      t3, 224(ra)
+core   0: 0x00000000800002dc (0x0fd0b423) sd      t4, 232(ra)
+core   0: 0x00000000800002e0 (0x0fe0b823) sd      t5, 240(ra)
+core   0: >>>>  freg_dump
+core   0: 0x00000000800002e4 (0x00002097) auipc   ra, 0x2
+core   0: 0x00000000800002e8 (0xe1c08093) addi    ra, ra, -484
+core   0: 0x00000000800002ec (0x0010a427) fsw     ft1, 8(ra)
+core   0: 0x00000000800002f0 (0x0020a827) fsw     ft2, 16(ra)
+core   0: 0x00000000800002f4 (0x0270ac27) fsw     ft7, 56(ra)
+core   0: 0x00000000800002f8 (0x0490a427) fsw     fs1, 72(ra)
+core   0: 0x00000000800002fc (0x04a0a827) fsw     fa0, 80(ra)
+core   0: 0x0000000080000300 (0x06c0a027) fsw     fa2, 96(ra)
+core   0: 0x0000000080000304 (0x06d0a427) fsw     fa3, 104(ra)
+core   0: 0x0000000080000308 (0x0b50a427) fsw     fs5, 168(ra)
+core   0: 0x000000008000030c (0x0b60a827) fsw     fs6, 176(ra)
+core   0: 0x0000000080000310 (0x0d90a427) fsw     fs9, 200(ra)
+core   0: 0x0000000080000314 (0x0da0a827) fsw     fs10, 208(ra)
+core   0: 0x0000000080000318 (0x0fc0a027) fsw     ft8, 224(ra)
+core   0: 0x000000008000031c (0x0fd0a427) fsw     ft9, 232(ra)
+core   0: 0x0000000080000320 (0x0fe0a827) fsw     ft10, 240(ra)
+core   0: 0x0000000080000324 (0x0ff0ac27) fsw     ft11, 248(ra)
+core   0: 0x0000000080000328 (0x00002097) auipc   ra, 0x2
+core   0: 0x000000008000032c (0xdd808093) addi    ra, ra, -552
+core   0: 0x0000000080000330 (0x0000b027) fsd     ft0, 0(ra)
+core   0: 0x0000000080000334 (0x0030bc27) fsd     ft3, 24(ra)
+core   0: 0x0000000080000338 (0x0240b027) fsd     ft4, 32(ra)
+core   0: 0x000000008000033c (0x0250b427) fsd     ft5, 40(ra)
+core   0: 0x0000000080000340 (0x0260b827) fsd     ft6, 48(ra)
+core   0: 0x0000000080000344 (0x0480b027) fsd     fs0, 64(ra)
+core   0: 0x0000000080000348 (0x04b0bc27) fsd     fa1, 88(ra)
+core   0: 0x000000008000034c (0x06e0b827) fsd     fa4, 112(ra)
+core   0: 0x0000000080000350 (0x06f0bc27) fsd     fa5, 120(ra)
+core   0: 0x0000000080000354 (0x0900b027) fsd     fa6, 128(ra)
+core   0: 0x0000000080000358 (0x0910b427) fsd     fa7, 136(ra)
+core   0: 0x000000008000035c (0x0920b827) fsd     fs2, 144(ra)
+core   0: 0x0000000080000360 (0x0930bc27) fsd     fs3, 152(ra)
+core   0: 0x0000000080000364 (0x0b40b027) fsd     fs4, 160(ra)
+core   0: 0x0000000080000368 (0x0b70bc27) fsd     fs7, 184(ra)
+core   0: 0x000000008000036c (0x0d80b027) fsd     fs8, 192(ra)
+core   0: 0x0000000080000370 (0x0db0bc27) fsd     fs11, 216(ra)
+core   0: >>>>  write_tohost
+core   0: 0x0000000080000374 (0x00100193) li      gp, 1
+core   0: 0x0000000080000378 (0x00001f17) auipc   t5, 0x1
+core   0: 0x000000008000037c (0xc83f2423) sw      gp, -888(t5)
+core   0: >>>>  _test_end
+core   0: 0x0000000080000380 (0x0000006f) j       pc + 0x0
